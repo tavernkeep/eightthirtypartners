@@ -24,64 +24,97 @@
       .animate-fadeInUp {
         animation: fadeInUp 1s ease-out;
       }
+
+      .custom-btn {
+        background-color: #1e40af;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      .custom-btn:hover {
+        background-color: #3b82f6;
+      }
     </style>
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Header Section -->
     <header
-      class="bg-blue-900 text-white py-6 px-4 text-center animate-fadeInUp"
+      class="bg-blue-900 text-white py-12 px-6 text-center animate-fadeInUp"
     >
-      <h1 class="text-3xl font-bold">Eight Thirty Partners LLC</h1>
-      <p class="text-lg">Expertise. Innovation. Results.</p>
+      <h1 class="text-4xl font-extrabold leading-tight">
+        Eight Thirty Partners LLC
+      </h1>
+      <p class="text-lg mt-2">Expertise. Innovation. Results.</p>
+      <p class="mt-6 text-xl">
+        <a href="#contact" class="custom-btn">Contact Us</a>
+      </p>
     </header>
 
-    <section class="py-12 px-6">
-      <h2 class="text-2xl font-bold text-center mb-6 animate-fadeInUp">
+    <!-- Core Services Section -->
+    <section class="py-16 px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10 animate-fadeInUp">
         Our Core Services
       </h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp">
-          <h3 class="text-xl font-semibold">Owner's Representative Services</h3>
-          <p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp"
+        >
+          <h3 class="text-xl font-semibold mb-4">
+            Owner's Representative Services
+          </h3>
+          <p class="text-gray-600">
             We oversee every project phase to ensure your goals are met
             efficiently, on time, and within budget.
           </p>
         </div>
+        <!-- Service 2 -->
         <div
-          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp"
           style="animation-delay: 0.2s"
         >
-          <h3 class="text-xl font-semibold">Feasibility Services</h3>
-          <p>
+          <h3 class="text-xl font-semibold mb-4">Feasibility Services</h3>
+          <p class="text-gray-600">
             Providing actionable insights to assess project viability and
             support decision-making.
           </p>
         </div>
+        <!-- Service 3 -->
         <div
-          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp"
           style="animation-delay: 0.4s"
         >
-          <h3 class="text-xl font-semibold">Project Planning</h3>
-          <p>
+          <h3 class="text-xl font-semibold mb-4">Project Planning</h3>
+          <p class="text-gray-600">
             Meticulous planning ensures smooth execution and successful
             delivery.
           </p>
         </div>
+        <!-- Service 4 -->
         <div
-          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp"
           style="animation-delay: 0.6s"
         >
-          <h3 class="text-xl font-semibold">Punch & Acceptance Services</h3>
-          <p>
+          <h3 class="text-xl font-semibold mb-4">
+            Punch & Acceptance Services
+          </h3>
+          <p class="text-gray-600">
             Ensuring all punch list items are resolved efficiently for a smooth
             project turnover.
           </p>
         </div>
+        <!-- Service 5 -->
         <div
-          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp"
           style="animation-delay: 0.8s"
         >
-          <h3 class="text-xl font-semibold">PIP Estimating & Negotiation</h3>
-          <p>
+          <h3 class="text-xl font-semibold mb-4">
+            PIP Estimating & Negotiation
+          </h3>
+          <p class="text-gray-600">
             Aligning investments with operational objectives while optimizing
             financial outcomes.
           </p>
@@ -89,21 +122,22 @@
       </div>
     </section>
 
-    <section class="py-12 px-6 bg-gray-200">
-      <h2 class="text-2xl font-bold text-center mb-6 animate-fadeInUp">
+    <!-- Meet the Principals Section -->
+    <section class="py-16 px-6 bg-gray-200">
+      <h2 class="text-3xl font-semibold text-center mb-10 animate-fadeInUp">
         Meet the Principals
       </h2>
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-2 gap-8">
         <div
-          class="bg-white p-6 rounded-lg shadow-lg text-center animate-fadeInUp"
+          class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 animate-fadeInUp"
         >
           <img
             src="assets/mike headshot.jpg"
             alt="Mike Pozdol"
             class="w-40 h-40 mx-auto rounded-full mb-4"
           />
-          <h3 class="text-xl font-semibold">Mike Pozdol</h3>
-          <p>
+          <h3 class="text-xl font-semibold mb-2">Mike Pozdol</h3>
+          <p class="text-gray-600 mb-4">
             Expert in construction management and cost control with a focus on
             hospitality, commercial, and residential projects.
           </p>
@@ -116,7 +150,7 @@
           >
         </div>
         <div
-          class="bg-white p-6 rounded-lg shadow-lg text-center animate-fadeInUp"
+          class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 animate-fadeInUp"
           style="animation-delay: 0.2s"
         >
           <img
@@ -124,8 +158,8 @@
             alt="Barry Weitman"
             class="w-40 h-40 mx-auto rounded-full mb-4"
           />
-          <h3 class="text-xl font-semibold">Barry Weitman</h3>
-          <p>
+          <h3 class="text-xl font-semibold mb-2">Barry Weitman</h3>
+          <p class="text-gray-600 mb-4">
             Specialist in project planning, value engineering, and feasibility
             analysis.
           </p>
@@ -140,18 +174,25 @@
       </div>
     </section>
 
-    <section class="py-12 px-6">
-      <h2 class="text-2xl font-bold text-center mb-6 animate-fadeInUp">
+    <!-- Why Choose Us Section -->
+    <section class="py-16 px-6">
+      <h2 class="text-3xl font-semibold text-center mb-6 animate-fadeInUp">
         Why Choose Eight Thirty Partners?
       </h2>
-      <p class="text-center max-w-3xl mx-auto animate-fadeInUp">
+      <p
+        class="text-center max-w-3xl mx-auto text-lg text-gray-600 animate-fadeInUp"
+      >
         We are committed to excellence, integrity, and innovation. Led by
         industry veterans Mike Pozdol and Barry Weitman, we deliver results.
       </p>
     </section>
 
-    <footer class="bg-blue-900 text-white text-center py-6 animate-fadeInUp">
-      <p>
+    <!-- Footer Section -->
+    <footer
+      class="bg-blue-900 text-white text-center py-6 animate-fadeInUp"
+      id="contact"
+    >
+      <p class="text-lg">
         <a href="mailto:barry@eightthirtypartners.com" class="underline"
           >Contact us</a
         >
