@@ -1,72 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eight Thirty Partners LLC</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.13.1/framer-motion.umd.min.js"></script>
-</head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-900 text-white py-6 px-4 text-center">
-        <h1 class="text-3xl font-bold">Eight Thirty Partners LLC</h1>
-        <p class="text-lg">Expertise. Innovation. Results.</p>
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header
+      class="bg-blue-900 text-white py-6 px-4 text-center animate-fadeInUp"
+    >
+      <h1 class="text-3xl font-bold">Eight Thirty Partners LLC</h1>
+      <p class="text-lg">Expertise. Innovation. Results.</p>
     </header>
-    
+
     <section class="py-12 px-6">
-        <h2 class="text-2xl font-bold text-center mb-6">Our Core Services</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <script>
-                const { motion } = window.framerMotion;
-            </script>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <motion.h3 class="text-xl font-semibold" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>Owner's Representative Services</motion.h3>
-                <p>We oversee every project phase to ensure your goals are met efficiently, on time, and within budget.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <motion.h3 class="text-xl font-semibold" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>Feasibility Services</motion.h3>
-                <p>Providing actionable insights to assess project viability and support decision-making.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <motion.h3 class="text-xl font-semibold" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>Project Planning</motion.h3>
-                <p>Meticulous planning ensures smooth execution and successful delivery.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <motion.h3 class="text-xl font-semibold" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>Punch & Acceptance Services</motion.h3>
-                <p>Ensuring all punch list items are resolved efficiently for a smooth project turnover.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <motion.h3 class="text-xl font-semibold" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>PIP Estimating & Negotiation</motion.h3>
-                <p>Aligning investments with operational objectives while optimizing financial outcomes.</p>
-            </div>
+      <h2 class="text-2xl font-bold text-center mb-6 animate-fadeInUp">
+        Our Core Services
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp">
+          <h3 class="text-xl font-semibold">Owner's Representative Services</h3>
+          <p>
+            We oversee every project phase to ensure your goals are met
+            efficiently, on time, and within budget.
+          </p>
         </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          style="animation-delay: 0.2s"
+        >
+          <h3 class="text-xl font-semibold">Feasibility Services</h3>
+          <p>
+            Providing actionable insights to assess project viability and
+            support decision-making.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          style="animation-delay: 0.4s"
+        >
+          <h3 class="text-xl font-semibold">Project Planning</h3>
+          <p>
+            Meticulous planning ensures smooth execution and successful
+            delivery.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          style="animation-delay: 0.6s"
+        >
+          <h3 class="text-xl font-semibold">Punch & Acceptance Services</h3>
+          <p>
+            Ensuring all punch list items are resolved efficiently for a smooth
+            project turnover.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg animate-fadeInUp"
+          style="animation-delay: 0.8s"
+        >
+          <h3 class="text-xl font-semibold">PIP Estimating & Negotiation</h3>
+          <p>
+            Aligning investments with operational objectives while optimizing
+            financial outcomes.
+          </p>
+        </div>
+      </div>
     </section>
-    
+
     <section class="py-12 px-6 bg-gray-200">
-        <h2 class="text-2xl font-bold text-center mb-6">Meet the Principals</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <motion.div class="bg-white p-6 rounded-lg shadow-lg text-center" animate={{ y: 0, opacity: 1 }} initial={{ y: 20, opacity: 0 }} transition={{ duration: 1 }}>
-                <img src="/mnt/data/mike headshot.jpg" alt="Mike Pozdol" class="w-40 h-40 mx-auto rounded-full mb-4">
-                <h3 class="text-xl font-semibold">Mike Pozdol</h3>
-                <p>Expert in construction management and cost control with a focus on hospitality, commercial, and residential projects.</p>
-                <a href="https://www.linkedin.com/in/mikepozdol/" class="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-            </motion.div>
-            <motion.div class="bg-white p-6 rounded-lg shadow-lg text-center" animate={{ y: 0, opacity: 1 }} initial={{ y: 20, opacity: 0 }} transition={{ duration: 1 }}>
-                <img src="/mnt/data/barry headshot.jpg" alt="Barry Weitman" class="w-40 h-40 mx-auto rounded-full mb-4">
-                <h3 class="text-xl font-semibold">Barry Weitman</h3>
-                <p>Specialist in project planning, value engineering, and feasibility analysis.</p>
-                <a href="https://www.linkedin.com/in/barry-weitman-4729453b/" class="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-            </motion.div>
+      <h2 class="text-2xl font-bold text-center mb-6 animate-fadeInUp">
+        Meet the Principals
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center animate-fadeInUp"
+        >
+          <img
+            src="assets/mike headshot.jpg"
+            alt="Mike Pozdol"
+            class="w-40 h-40 mx-auto rounded-full mb-4"
+          />
+          <h3 class="text-xl font-semibold">Mike Pozdol</h3>
+          <p>
+            Expert in construction management and cost control with a focus on
+            hospitality, commercial, and residential projects.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/mikepozdol/"
+            class="text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Connect on LinkedIn</a
+          >
         </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg text-center animate-fadeInUp"
+          style="animation-delay: 0.2s"
+        >
+          <img
+            src="assets/barry headshot.jpg"
+            alt="Barry Weitman"
+            class="w-40 h-40 mx-auto rounded-full mb-4"
+          />
+          <h3 class="text-xl font-semibold">Barry Weitman</h3>
+          <p>
+            Specialist in project planning, value engineering, and feasibility
+            analysis.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/barry-weitman-4729453b/"
+            class="text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Connect on LinkedIn</a
+          >
+        </div>
+      </div>
     </section>
-    
+
     <section class="py-12 px-6">
-        <h2 class="text-2xl font-bold text-center mb-6">Why Choose Eight Thirty Partners?</h2>
-        <p class="text-center max-w-3xl mx-auto">We are committed to excellence, integrity, and innovation. Led by industry veterans Mike Pozdol and Barry Weitman, we deliver results.</p>
+      <h2 class="text-2xl font-bold text-center mb-6 animate-fadeInUp">
+        Why Choose Eight Thirty Partners?
+      </h2>
+      <p class="text-center max-w-3xl mx-auto animate-fadeInUp">
+        We are committed to excellence, integrity, and innovation. Led by
+        industry veterans Mike Pozdol and Barry Weitman, we deliver results.
+      </p>
     </section>
-    
-    <footer class="bg-blue-900 text-wshite text-center py-6">
-        <p><a href="mailto:barry@eightthirtypartners.com" class="underline">Contact us</a> today to explore how we can support your project’s success.</p>
+
+    <footer class="bg-blue-900 text-white text-center py-6 animate-fadeInUp">
+      <p>
+        <a href="mailto:barry@eightthirtypartners.com" class="underline"
+          >Contact us</a
+        >
+        today to explore how we can support your project’s success.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
