@@ -10,237 +10,323 @@
       href="https://tavernkeep.github.io/eightthirtypartners/assets/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
     <style>
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .animate-fadeInUp {
-        animation: fadeInUp 1s ease-out;
-      }
-
-      .custom-btn {
-        background-color: #3b82f6;
-        color: white;
-        padding: 12px 28px;
-        border-radius: 30px;
-        text-transform: uppercase;
-        font-weight: bold;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-      .custom-btn:hover {
-        background-color: #2563eb;
-        transform: scale(1.05);
-      }
-
-      .section-title {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #e0e7ff;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-
-      .card {
-        background-color: #1f2937;
-        border-radius: 16px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-        padding: 24px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-      }
-
-      .card img {
-        border-radius: 50%;
-      }
-
-      .card h3 {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #f3f4f6;
-        margin-bottom: 1rem;
-      }
-
-      .card p {
-        color: #d1d5db;
-        margin-bottom: 1rem;
-      }
-
-      .card a {
-        color: #3b82f6;
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.3s ease;
-      }
-
-      .card a:hover {
-        color: #2563eb;
-      }
-
       body {
-        background-color: #111827;
-        color: #d1d5db;
-      }
-
-      header {
-        background: linear-gradient(135deg, #0f172a, #1e293b);
-      }
-
-      footer {
-        background-color: #1f2937;
-      }
-
-      footer a {
-        text-decoration: underline;
-        color: #3b82f6;
+        font-family: "Bystander";
       }
     </style>
   </head>
-  <body class="font-sans leading-relaxed">
+  <body class="bg-slate-900 max-w-7xl mx-auto">
     <!-- Header Section -->
     <header class="py-12 px-6 text-white text-center animate-fadeInUp">
-      <h1 class="text-4xl font-extrabold leading-tight">
+      <h1
+        class="text-4xl lg:text-6xl font-extrabold leading-tight tracking-wider"
+      >
         Eight Thirty Partners LLC
       </h1>
-      <p class="text-lg mt-2">Expertise. Innovation. Results.</p>
-      <p class="mt-6">
-        <a href="#contact" class="custom-btn">Contact Us</a>
+      <div class="relative flex py-3 px-16 items-center">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <h2 class="text-lg mx-4 text-slate-200">
+          Expertise. Innovation. Results.
+        </h2>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+      <p class="mt-6 flex justify-center">
+        <a
+          href="#contact"
+          class="font-sans inline-flex items-center px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700"
+        >
+          Contact Us
+          <svg
+            class="w-4 h-4 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path>
+          </svg>
+        </a>
       </p>
     </header>
 
     <!-- Core Services Section -->
-    <section class="py-20 px-6">
-      <h2 class="section-title animate-fadeInUp">Our Core Services</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section class="py-12 px-6 space-y-6 flex flex-col">
+      <h2 class="text-white text-2xl">Our Core Services</h2>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 font-sans text-white"
+      >
         <!-- Service 1 -->
-        <div class="card animate-fadeInUp">
-          <h3>Owner's Representative Services</h3>
-          <p>
-            We oversee every project phase to ensure your goals are met
-            efficiently, on time, and within budget.
-          </p>
+        <div class="bg-slate-800 rounded p-4 gap-1 flex gap-3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="lightblue"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-base">
+              Owner's Representative Services
+            </h3>
+            <p class="text-slate-300 leading-6">
+              We oversee every project phase to ensure your goals are met
+              efficiently, on time, and within budget.
+            </p>
+          </div>
         </div>
         <!-- Service 2 -->
-        <div class="card animate-fadeInUp" style="animation-delay: 0.2s">
-          <h3>Feasibility Services</h3>
-          <p>
-            Providing actionable insights to assess project viability and
-            support decision-making.
-          </p>
+        <div class="bg-slate-800 rounded p-4 gap-1 flex gap-3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="lightblue"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-base">Feasibility Services</h3>
+            <p class="text-slate-300 leading-6">
+              Providing actionable insights to assess project viability and
+              support decision-making.
+            </p>
+          </div>
         </div>
         <!-- Service 3 -->
-        <div class="card animate-fadeInUp" style="animation-delay: 0.4s">
-          <h3>Project Planning</h3>
-          <p>
-            Meticulous planning ensures smooth execution and successful
-            delivery.
-          </p>
+        <div class="bg-slate-800 rounded p-4 gap-1 flex gap-3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="lightblue"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-base">Project Planning</h3>
+            <p class="text-slate-300 leading-6">
+              Meticulous planning ensures smooth execution and successful
+              delivery.
+            </p>
+          </div>
         </div>
         <!-- Service 4 -->
-        <div class="card animate-fadeInUp" style="animation-delay: 0.6s">
-          <h3>Punch & Acceptance Services</h3>
-          <p>
-            Ensuring all punch list items are resolved efficiently for a smooth
-            project turnover.
-          </p>
+        <div class="bg-slate-800 rounded p-4 gap-1 flex gap-3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="lightblue"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-base">Punch & Acceptance Services</h3>
+            <p class="text-slate-300 leading-6">
+              Ensuring all punch list items are resolved efficiently for a
+              smooth project turnover.
+            </p>
+          </div>
         </div>
         <!-- Service 5 -->
-        <div class="card animate-fadeInUp" style="animation-delay: 0.8s">
-          <h3>PIP Estimating & Negotiation</h3>
-          <p>
-            Aligning investments with operational objectives while optimizing
-            financial outcomes.
-          </p>
+        <div class="bg-slate-800 rounded p-4 gap-1 flex gap-3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="lightblue"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big"
+            >
+              <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+              <path d="m9 11 3 3L22 4" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-base">
+              PIP Estimating & Negotiation
+            </h3>
+            <p class="text-slate-300 leading-6">
+              Aligning investments with operational objectives while optimizing
+              financial outcomes.
+            </p>
+          </div>
         </div>
       </div>
     </section>
-<!-- Contact Section - Mobile Friendly -->
-<section class="py-20 px-6 bg-gray-800" id="contact">
-  <h2 class="section-title animate-fadeInUp text-center">Contact Us</h2>
-  <div class="flex flex-col sm:flex-row items-center sm:justify-center space-y-8 sm:space-y-0 sm:space-x-12 mt-12">
-    
-    <!-- Principal 1: Mike Pozdol -->
-    <div class="flex flex-col sm:flex-row items-center animate-fadeInUp">
-      <img
-        src="assets/mike headshot.jpg"
-        alt="Mike Pozdol"
-        class="w-32 h-32 sm:w-48 sm:h-48 rounded-full mb-4 sm:mb-0 sm:mr-8 shadow-xl transform hover:scale-105 transition duration-300"
-      />
-      <div class="text-center sm:text-left">
-        <h3 class="text-2xl font-semibold text-white">Mike Pozdol</h3>
-        <p class="text-lg text-gray-400 mb-4">
-          Mike brings years of experience in construction management and cost control. 
-          Reach out for expert guidance in any stage of your project.
-        </p>
-        <a href="mailto:mike@eightthirtypartners.com" class="custom-btn">Email Mike</a>
-      </div>
-    </div>
+    <!-- Contact Section - Mobile Friendly -->
+    <section class="py-16 px-8 bg-gray-800 font-sans" id="contact">
+      <h2 class="text-white text-2xl font-['Bystander']">Contact Us</h2>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 pt-8 lg:flex-row gap-8 items-center md:justify-center space-y-8 md:space-y-0"
+      >
+        <!-- Principal 1: Mike Pozdol -->
+        <div class="flex flex-col md:flex-row items-center">
+          <img
+            src="assets/mike headshot.jpg"
+            alt="Mike Pozdol"
+            class="w-32 h-32 lg:w-48 lg:h-48 rounded-full mb-4 md:mb-0 md:mr-8 shadow-xl transform hover:scale-105 transition duration-300"
+          />
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl font-semibold text-white">Mike Pozdol</h3>
+            <p class="text-lg text-gray-400 mb-4 leading-7">
+              Mike brings years of experience in construction management and
+              cost control. Reach out for expert guidance in any stage of your
+              project.
+            </p>
+            <div class="flex flex-wrap gap-1.5 justify-center md:justify-start">
+              <a
+                href="mailto:mike@eightthirtypartners.com"
+                class="font-sans inline-flex items-center px-4 py-2 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-slate-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-slate-700 hover:border-slate-700 hover:text-white focus-within:bg-slate-700 focus-within:border-slate-700"
+              >
+                Email Mike
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mikepozdol/"
+                class="gap-2 font-sans inline-flex items-center px-4 py-2 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
 
-    <!-- Principal 2: Barry Weitman -->
-    <div class="flex flex-col sm:flex-row items-center animate-fadeInUp" style="animation-delay: 0.2s">
-      <img
-        src="assets/barry headshot.jpg"
-        alt="Barry Weitman"
-        class="w-32 h-32 sm:w-48 sm:h-48 rounded-full mb-4 sm:mb-0 sm:mr-8 shadow-xl transform hover:scale-105 transition duration-300"
-      />
-      <div class="text-center sm:text-left">
-        <h3 class="text-2xl font-semibold text-white">Barry Weitman</h3>
-        <p class="text-lg text-gray-400 mb-4">
-          Barry specializes in project planning, value engineering, and feasibility analysis. 
-          Connect with him to discuss your next project.
-        </p>
-        <a href="mailto:barry@eightthirtypartners.com" class="custom-btn">Email Barry</a>
+        <!-- Principal 2: Barry Weitman -->
+        <div class="flex flex-col md:flex-row items-center animate-fadeInUp">
+          <img
+            src="assets/barry headshot.jpg"
+            alt="Barry Weitman"
+            class="w-32 h-32 lg:w-48 lg:h-48 rounded-full mb-4 md:mb-0 md:mr-8 shadow-xl transform hover:scale-105 transition duration-300"
+          />
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl font-semibold text-white">Barry Weitman</h3>
+            <p class="text-lg text-gray-400 mb-4 leading-7">
+              Barry specializes in project planning, value engineering, and
+              feasibility analysis. Connect with him to discuss your next
+              project.
+            </p>
+            <div class="flex flex-wrap gap-1.5 justify-center md:justify-start">
+              <a
+                href="mailto:barry@eightthirtypartners.com"
+                class="whitespace-nowrap font-sans inline-flex items-center px-4 py-2 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-slate-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-slate-700 hover:border-slate-700 hover:text-white focus-within:bg-slate-700 focus-within:border-slate-700"
+                >Email Barry</a
+              >
+              <a
+                href="https://www.linkedin.com/in/barry-weitman-4729453b/"
+                class="gap-2 font-sans inline-flex items-center px-4 py-2 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="text-center mt-12 text-lg text-gray-400 animate-fadeInUp">
-    <p>
-      If you prefer, you can also reach us via the email addresses above. We look forward to hearing from you!
-    </p>
-  </div>
-</section>
+    </section>
 
     <!-- Why Choose Us Section -->
-    <section class="py-20 px-6">
-      <h2 class="section-title animate-fadeInUp">
-        Why Choose Eight Thirty Partners?
-      </h2>
+    <section class="py-20 px-6 text-center flex flex-col gap-2">
+      <h2 class="text-white text-2xl">Why Choose Eight Thirty Partners?</h2>
       <p
-        class="text-center max-w-3xl mx-auto text-lg text-gray-400 animate-fadeInUp"
+        class="font-sans text-center max-w-3xl mx-auto text-lg text-gray-400 animate-fadeInUp"
       >
-        We are committed to excellence, integrity, and innovation. Led by
-        industry veterans Mike Pozdol and Barry Weitman, we deliver results.
+        We are committed to excellence, integrity, and innovation.
+        <br />
+        Led by industry veterans Mike Pozdol and Barry Weitman, we deliver
+        results.
       </p>
     </section>
 
-    <!-- Contact Section -->
-    <section class="py-20 px-6 bg-gray-800" id="contact">
-      <h2 class="section-title animate-fadeInUp">Contact Us</h2>
-      <div class="text-center text-lg text-gray-400 animate-fadeInUp">
-        <p>If you’re ready to discuss your project, get in touch today!</p>
-        <p class="mt-4">
-          <a href="mailto:barry@eightthirtypartners.com" class="custom-btn"
-            >Email Us</a
-          >
-        </p>
-      </div>
-    </section>
-
     <!-- Footer Section -->
-    <footer class="text-white text-center py-6 animate-fadeInUp">
+    <footer class="text-white text-center py-6 font-sans">
       <p class="text-lg">
-        <a href="mailto:barry@eightthirtypartners.com" class="underline"
+        <a
+          href="mailto:barry@eightthirtypartners.com"
+          class="text-blue-500 underline"
           >Contact us</a
         >
         today to explore how we can support your project’s success.
